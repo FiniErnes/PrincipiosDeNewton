@@ -29,7 +29,7 @@ nav ul li {
 nav ul li a, .dropdown-btn {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px; /* Aumentar padding para mejor clic */
     display: inline-block;
     background-color: #B22222;
     border: none;
@@ -66,4 +66,23 @@ nav ul li a:hover, .dropdown-btn:hover {
 /* Mostrar el contenido desplegable al hacer clic */
 .show {
     display: block;
+}
+
+/* Estilos para el main */
+main {
+    display: flex; /* Usar flexbox para el contenido principal */
+    justify-content: space-between; /* Espaciado entre texto y video */
+    padding: 20px;
+}
+
+/* Estilo para la sección de texto */
+section {
+    flex: 1; /* Permitir que ocupe el espacio disponible */
+    margin-right: 20px; /* Espacio entre el texto y el video */
+}
+
+/* Estilo para el video */
+video {
+    max-width: 400px; /* Limitar el ancho del video */
+    height: auto; /* Mantener la proporción del video */
 }
